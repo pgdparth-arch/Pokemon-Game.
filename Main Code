@@ -1,0 +1,45 @@
+import random
+
+def game():
+    global health_opps
+    
+    for i in range(10):
+        if health_opps>0:
+            temp=random.randint(attack[0],attack[1])
+            print("Damage dealt:",temp)
+            health_opps=health_opps-temp
+            
+            if health_opps>=0:
+                print("Health remaining:",health_opps)
+                
+        else:
+            print("Pokemon defeated")
+            break
+    
+your_pokemon="Mewtwo"
+health=100
+attack=[50,60]
+
+print("You are going through a forest...")
+waste=input()
+pokemon=["Charlizard","Pikachu","Bulbasaur"]
+encountered=random.choice(pokemon)
+
+print("You encountered:",encountered)
+waste=input()
+print("You deployed:",your_pokemon)
+
+if encountered=="Charlizard":
+    health_opps=780
+    attack_1=[30,40]
+    attack_2=[30,40]
+elif encountered=="Pikachu":
+    health_opps=640
+    attack_1=[30,40]
+    attack_2=[30,40]
+elif encountered=="Bulbasaur":
+    health_opps=860
+    attack_1=[30,40]
+    attack_2=[30,40]
+    
+game()
