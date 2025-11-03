@@ -1,2 +1,2 @@
 # Pokemon-Game.
-Created a simple text-based Pokemon game (under developement)
+new plans to add critical damage, block attacks, healing potion and some new pokemons.
